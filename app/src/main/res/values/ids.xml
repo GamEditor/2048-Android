@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+  <!-- app_id -->
+  <string name="app_id" translatable="false">106257177902</string>
+  <!-- package_name -->
+  <string name="package_name" translatable="false">com.gameditors.a2048</string>
+  <!-- achievement 32 -->
+  <string name="achievement_32" translatable="false">CgkIrrqv64sDEAIQBA</string>
+  <!-- achievement 64 -->
+  <string name="achievement_64" translatable="false">CgkIrrqv64sDEAIQBQ</string>
+  <!-- achievement 128 -->
+  <string name="achievement_128" translatable="false">CgkIrrqv64sDEAIQBg</string>
+  <!-- achievement 256 -->
+  <string name="achievement_256" translatable="false">CgkIrrqv64sDEAIQBw</string>
+  <!-- achievement 512 -->
+  <string name="achievement_512" translatable="false">CgkIrrqv64sDEAIQCA</string>
+  <!-- achievement 1024 -->
+  <string name="achievement_1024" translatable="false">CgkIrrqv64sDEAIQCQ</string>
+  <!-- achievement 2048 -->
+  <string name="achievement_2048" translatable="false">CgkIrrqv64sDEAIQCg</string>
+  <!-- achievement 4096 -->
+  <string name="achievement_4096" translatable="false">CgkIrrqv64sDEAIQCw</string>
+  <!-- achievement 8192 -->
+  <string name="achievement_8192" translatable="false">CgkIrrqv64sDEAIQDA</string>
+  <!-- leaderboard 4x4 -->
+  <string name="leaderboard_4x4" translatable="false">CgkIrrqv64sDEAIQAQ</string>
+  <!-- leaderboard 5x5 -->
+  <string name="leaderboard_5x5" translatable="false">CgkIrrqv64sDEAIQAg</string>
+  <!-- leaderboard 6x6 -->
+  <string name="leaderboard_6x6" translatable="false">CgkIrrqv64sDEAIQAw</string>
+</resources>

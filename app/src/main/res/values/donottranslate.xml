@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Market URLs -->
+    <string name="url_cafe_bazaar" translatable="false">https://cafebazaar.ir/app/com.gameditors.a2048</string>
+    <string name="url_cafe_bazzar_developer" translatable="false">https://cafebazaar.ir/developer/scientist_studio</string>
+    <string name="url_google_play" translatable="false">https://play.google.com/store/apps/details?id=com.gameditors.a2048</string>
+
+    <string name="instagram_package_name" ranslatable="false" translatable="false">com.instagram.android</string>
+    <string name="instagram_page_uri" ranslatable="false" translatable="false">https://www.instagram.com/gameditors/</string>
+
+    <!-- For Google Play Services -->
+    <string name="achievements_exception" translatable="false">There was an issue communicating with achievements.</string>
+    <string name="leaderboards_exception" translatable="false">There was an issue communicating with leaderboards.</string>
+    <string name="players_exception" translatable="false">There was an issue communicating with players.</string>
+    <string name="status_exception_error" translatable="false">%1$s (status %2$d). %3$s.</string>
+    <string name="easy_mode_explanation" translatable="false">You\'re playing in easy mode, so you got the score you requested! Wasn\'t that easy?</string>
+    <string name="hard_mode_explanation" translatable="false">You\'re playing in hard mode, so you only got half the score you requested! Isn\'t this game hard?</string>
+    <string name="achievement_prime_toast_text" translatable="false">Prime score!</string>
+    <string name="achievement_arrogant_toast_text" translatable="false">Arrogant (requested maximum score)!</string>
+    <string name="achievement_humble_toast_text" translatable="false">Humble! (requested 0 score)</string>
+    <string name="achievement_leet_toast_text" translatable="false">L33t! (got 1337 score)</string>
+
+    <string name="your_progress_will_be_uploaded" translatable="false">Your existing achievements and score will be uploaded shortly.</string>
+    <string name="what_score_do_you_deserve" translatable="false">What score do you think you deserve?</string>
+    <string name="show_achievements" translatable="false">Show Achievements</string>
+    <string name="show_leaderboards" translatable="false">Show Leaderboards</string>
+    <string name="sign_in_why" translatable="false">Sign in with Google to share your scores and achievements with your friends.</string>
+    <string name="you_are_signed_in" translatable="false">You are signed in with Google.</string>
+    <string name="sign_in_to_upload_this_score" translatable="false">Sign in now to upload this score, save your achievements and share your progress with friends.</string>
+    <string name="signin_other_error" translatable="false">There was an issue with sign in.  Please try again later.</string>
+
+    <!-- Sizes -->
+    <string name="size_4x4" translatable="false">4x4</string>
+    <string name="size_5x5" translatable="false">5x5</string>
+    <string name="size_6x6" translatable="false">6x6</string>
+</resources>

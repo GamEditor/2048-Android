@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="high_score">HIGH SCORE</string>
+    <string name="score">SCORE</string>
+    <string name="you_win">You Win!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="go_on">Tap to Continue</string>
+    <string name="for_now">For now…</string>
+    <string name="endless">"Endless" Mode</string>
+
+    <!-- Confirmation dialog-->
+    <string name="reset">Reset</string>
+    <string name="continue_game">Cancel</string>
+    <string name="reset_dialog_title">Reset game</string>
+    <string name="reset_dialog_message">Are you sure you wish to reset the game?</string>
+
+    <!-- Share Intro -->
+    <string name="get_from_bazaar">Get 2048 on Cafe Bazaar</string>
+    <string name="share_title">Share 2048 using</string>
+
+    <!-- Trash -->
+    <string name="reward_amount_error">Each set only has two extra chance!</string>
+    <string name="tiles_are_not_enough_to_remove">Tiles are very few to remove!</string>
+    <string name="trash_dialog_title">Remove tiles</string>
+    <string name="trash_dialog_message">Are you sure you wish to REMOVE several tiles?</string>
+    <string name="yes_delete_tiles">Yes</string>
+    <string name="dont_delete_tiles">No</string>
+
+    <!-- Deleting Selection -->
+    <string name="action_deleting_selection">Deleting Selection</string>
+    <string name="title_deleting_selection">Select your required tile</string>
+    <string name="message_unable_deleting_selection">no more chance for this set!</string>
+    <string name="message_inactivated_game_and_deleting_selection_is_available">Press \"Undo\", then do this action again!</string>
+    <string name="title_remain_deleting_selections_amount">Remaining selections: </string>
+    <string name="question_deleting_selections">Are you sure?</string>
+
+    <!-- Menu Items -->
+    <string name="achievements">Achievements</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string name="settings">Settings</string>
+    <string name="contact_us">Contact us</string>
+    <string name="instagram">Instagram</string>
+    <string name="other_games">Other games</string>
+    <string name="background_color">Background color</string>
+    <string name="rate_us">Rate 2048</string>
+    <string name="share_2048">Share with friends</string>
+    <string name="sign_out">Sign out</string>
+    <string name="try_again">Try again a few seconds later!</string>
+
+    <!-- Color -->
+    <string name="color_picker">Color picker</string>
+    <string name="red">Red:</string>
+    <string name="green">Green:</string>
+    <string name="blue">Blue:</string>
+
+    <!-- Coloring -->
+    <string name="background_color_changed">Background color has been changed</string>
+    <string name="background_color_has_been_reset_to_default">Background color has been reset to default</string>
+    <string name="accept_color">Accept</string>
+    <string name="dont_accept_color">Cancel</string>
+    <string name="reset_to_default_color">Default</string>
+
+    <!-- Contact with Email -->
+    <string name="email_client_error">There is no email client installed!</string>
+    <string name="email_subject">2048 support</string>
+    <string name="email_support_address" translatable="false">gameditors.corp@gmail.com</string>
+    <string name="email_send_title">Send Email...</string>
+
+    <string name="saved">All information saved</string>
+    <string name="loaded">Successfuly loaded!</string>
+    <string name="loading_failed">You haven\'t any saved game!</string>
+    <string name="message_unable_saving_on_game_over">when the game is over, you can\'t make backup!</string>
+
+    <!-- new features -->
+    <string name="new_features_title">What\'s new?</string>
+    <string name="new_features_positive_btn">OK</string>
+    <string name="message_new_features">Snapshot saving/loading has been added to the game</string>
+</resources>

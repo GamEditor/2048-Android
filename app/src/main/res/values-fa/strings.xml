@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">۲۰۴۸</string>
+    <string name="header">2048</string>
+    <string name="high_score">بالاترین امتیاز</string>
+    <string name="score">امتیاز</string>
+    <string name="you_win">برنده شدی!</string>
+    <string name="game_over">باختی!</string>
+    <string name="go_on">برای ادامه، صفحه رو لمس کن</string>
+    <string name="for_now">برای الان...</string>
+    <string name="endless">مدل "بی نهایت"</string>
+
+    <!-- Confirmation dialog-->
+    <string name="reset">مطمئنم</string>
+    <string name="continue_game">بی خیال</string>
+    <string name="reset_dialog_title">بازی جدید</string>
+    <string name="reset_dialog_message">مطمئنی می خوای از اول بازی کنی؟</string>
+
+    <!-- Share Intro -->
+    <string name="get_from_bazaar">2048 رو از کافه بازار دانلود کن</string>
+    <string name="share_title">به اشتراک گذاشتن 2048 با</string>
+
+    <!-- Trash -->
+    <string name="reward_amount_error">هر دست فقط دو بار فرصت اضافه داره!</string>
+    <string name="tiles_are_not_enough_to_remove">هنوز تعداد خونه های پر خیلی کمه!</string>
+    <string name="trash_dialog_title">پاک کردن خونه ها</string>
+    <string name="trash_dialog_message">مطمئنی می خواهی چند تا از خونه ها رو پاکشون کنی؟</string>
+    <string name="yes_delete_tiles">آره</string>
+    <string name="dont_delete_tiles">نه</string>
+
+    <!-- Deleting Selection -->
+    <string name="action_deleting_selection">حذف انتخابی</string>
+    <string name="title_deleting_selection">خونه ی مورد نظر رو انتخاب کن</string>
+    <string name="message_unable_deleting_selection">حذف های انتخابی برای این دست تموم شدن!</string>
+    <string name="message_inactivated_game_and_deleting_selection_is_available">دکمه Undo رو بزن و دوباره تلاش کن</string>
+    <string name="title_remain_deleting_selections_amount">انتخاب های باقی مانده: </string>
+    <string name="question_deleting_selections">مطمئن هستی؟</string>
+
+    <!-- Menu Items -->
+    <string name="achievements">افتخارات</string>
+    <string name="leaderboards">نفرات برتر</string>
+    <string name="settings">تنظیمات</string>
+    <string name="contact_us">ارتباط با ما</string>
+    <string name="instagram">اینستاگرام</string>
+    <string name="other_games">سایر بازی ها</string>
+    <string name="background_color">رنگ پس زمینه</string>
+    <string name="rate_us">امتیاز دادن به 2048</string>
+    <string name="share_2048">به اشتراک گذاشتن با دوستان</string>
+    <string name="sign_out">خروج از حساب گوگل</string>
+    <string name="try_again">چند ثانیه بعد دوباره تلاش کن!</string>
+
+    <!-- Color -->
+    <string name="color_picker">انتخاب کننده رنگ</string>
+    <string name="red">قرمز:</string>
+    <string name="green">سبز:</string>
+    <string name="blue">آبی:</string>
+
+    <!-- Coloring -->
+    <string name="background_color_changed">رنگ پس زمینه تغییر داده شد</string>
+    <string name="background_color_has_been_reset_to_default">رنگ پس زمینه به حالت پیش فرض برگشت</string>
+    <string name="accept_color">تایید</string>
+    <string name="dont_accept_color">بی خیال</string>
+    <string name="reset_to_default_color">پیش فرض</string>
+
+    <!-- Contact with Email -->
+    <string name="email_client_error">برنامه ای برای ارسال ایمیل روی دستگاه نصب نیست!</string>
+    <string name="email_subject">پشتیبانی 2048</string>
+    <string name="email_send_title">ارسال ایمیل...</string>
+
+    <!-- sava/load -->
+    <string name="saved">همه اطلاعات ذخیره شدند</string>
+    <string name="loaded">با موفقیت بازیابی شد</string>
+    <string name="loading_failed">بازی ذخیره شده نداری!</string>
+    <string name="message_unable_saving_on_game_over">وقتی بازی رو باختی، نمی تونی پشتیبان بگیری!</string>
+
+    <!-- new features -->
+    <string name="new_features_title">قابلیت های جدید</string>
+    <string name="new_features_positive_btn">خُب</string>
+    <string name="message_new_features">قابلیت تهیه پشتیبان و بازیابی آن به بازی اضافه شدند</string>
+</resources>
