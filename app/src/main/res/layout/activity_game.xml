@@ -22,19 +22,18 @@
         app:layout_constraintTop_toTopOf="parent">
     </FrameLayout>
 
-
-    <ir.adad.client.Banner
+    <ir.adad.banner.AdadBannerAd
         android:id="@+id/banner_ad_view_game"
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_frame_layout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:token="550ba8de-9d85-42d6-9f05-ddbead37e346" />
 </android.support.constraint.ConstraintLayout>

@@ -176,20 +176,19 @@
 
     </LinearLayout>
 
-
-    <ir.adad.client.Banner
+    <ir.adad.banner.AdadBannerAd
         android:id="@+id/banner_ad_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:token="2e8735d8-6c87-46ac-af9c-2d599c5901de" />
 
 </android.support.constraint.ConstraintLayout>

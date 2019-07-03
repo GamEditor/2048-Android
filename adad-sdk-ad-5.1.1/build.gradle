@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('adad-sdk-ad-5.1.1.aar'))

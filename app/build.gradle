@@ -33,8 +33,17 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'  // also Adad core dependency
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.google.android.gms:play-services-games:17.0.0'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    // Adad core dependencies
+    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
+    implementation 'com.goebl:david-webb:1.3.0'
+
+    // Adad sdk
+    implementation project(':adad-sdk-ad-5.1.1')
+    implementation project(':adad-sdk-banner-5.1.1')
+    implementation project(':adad-sdk-core-5.1.1')
 }

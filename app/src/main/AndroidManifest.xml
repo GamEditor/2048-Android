@@ -21,25 +21,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <!-- Adad Advertise -->
-        <activity
-            android:name="ir.adad.client.AdadActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-
-        <meta-data
-            android:name="AdadToken"
-            android:value="41eff2ac3c6948b3b5937cae7d23ddcf" />
-        <meta-data
-            android:name="AdadBannersEnabledOnStart"
-            android:value="true" />
-        <meta-data
-            android:name="AdadTestMode"
-            android:value="false" />
-        <meta-data
-            android:name="AdadShowRemoveAds"
-            android:value="true" />
-
         <activity
             android:name=".MainMenuActivity"
             android:screenOrientation="portrait">

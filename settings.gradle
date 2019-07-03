@@ -1,1 +1,1 @@
-include ':app', ':adad-client-3.1'
+include ':app', ':adad-client-3.1', ':adad-sdk-ad-5.1.1', ':adad-sdk-banner-5.1.1', ':adad-sdk-core-5.1.1'

@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -33,13 +32,10 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
-import org.json.JSONObject;
-
 import java.util.Arrays;
 
-import ir.adad.client.AdListener;
-import ir.adad.client.AdView;
-import ir.adad.client.Adad;
+import ir.adad.ad.AdadAdListener;
+import ir.adad.banner.AdadBannerAd;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -114,19 +110,21 @@ public class MainActivity extends AppCompatActivity
 
         frameLayout.addView(view);
 
-        ((AdView) findViewById(R.id.banner_ad_view_game)).setAdListener(new AdListener()
-        {
+        ((AdadBannerAd)findViewById(R.id.banner_ad_view_game)).setAdListener(new AdadAdListener() {
             @Override
-            public void onAdLoaded() {}
+            public void onLoaded() { }
+
             @Override
-            public void onAdFailedToLoad() { }
+            public void onShowed() { }
+
             @Override
-            public void onMessageReceive(JSONObject message) {}
+            public void onActionOccurred(int code) { }
+
             @Override
-            public void onRemoveAdsRequested()
-            {
-                Adad.disableBannerAds();
-            }
+            public void onError(int code, String message) { }
+
+            @Override
+            public void onClosed() { }
         });
 
         // Create the client used to sign in to Google services.

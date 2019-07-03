@@ -37,9 +37,10 @@ import com.google.android.gms.tasks.Task;
 
 import org.json.JSONObject;
 
-import ir.adad.client.AdListener;
-import ir.adad.client.AdView;
-import ir.adad.client.Adad;
+import ir.adad.ad.AdadAdListener;
+import ir.adad.banner.AdadBannerAd;
+import ir.adad.core.Adad;
+
 
 public class MainMenuActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener
 {
@@ -68,7 +69,7 @@ public class MainMenuActivity extends AppCompatActivity implements PopupMenu.OnM
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        Adad.initialize(getApplicationContext());
+        Adad.initialize("0fb16c39-0c78-408f-985e-917f3a3d6972");
         setContentView(R.layout.activity_main_menu);
 
         mIsMainMenu = true;
@@ -83,19 +84,21 @@ public class MainMenuActivity extends AppCompatActivity implements PopupMenu.OnM
         bt5x5.setTypeface(ClearSans_Bold);
         bt6x6.setTypeface(ClearSans_Bold);
 
-        ((AdView) findViewById(R.id.banner_ad_view)).setAdListener(new AdListener()
-        {
+        ((AdadBannerAd)findViewById(R.id.banner_ad_view)).setAdListener(new AdadAdListener() {
             @Override
-            public void onAdLoaded() {}
+            public void onLoaded() { }
+
             @Override
-            public void onAdFailedToLoad() { }
+            public void onShowed() { }
+
             @Override
-            public void onMessageReceive(JSONObject message) {}
+            public void onActionOccurred(int code) { }
+
             @Override
-            public void onRemoveAdsRequested()
-            {
-                Adad.disableBannerAds();
-            }
+            public void onError(int code, String message) { }
+
+            @Override
+            public void onClosed() { }
         });
 
         // Create the client used to sign in to Google services.
