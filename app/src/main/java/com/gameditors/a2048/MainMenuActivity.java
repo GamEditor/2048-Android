@@ -3,15 +3,19 @@ package com.gameditors.a2048;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -69,7 +73,6 @@ public class MainMenuActivity extends AppCompatActivity implements PopupMenu.OnM
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        Adad.initialize("0fb16c39-0c78-408f-985e-917f3a3d6972");
         setContentView(R.layout.activity_main_menu);
 
         mIsMainMenu = true;
@@ -84,22 +87,31 @@ public class MainMenuActivity extends AppCompatActivity implements PopupMenu.OnM
         bt5x5.setTypeface(ClearSans_Bold);
         bt6x6.setTypeface(ClearSans_Bold);
 
-        ((AdadBannerAd)findViewById(R.id.banner_ad_view)).setAdListener(new AdadAdListener() {
-            @Override
-            public void onLoaded() { }
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
 
-            @Override
-            public void onShowed() { }
+        if(activeNetwork != null && activeNetwork.isConnectedOrConnecting())
+        {
+            Adad.initialize("0fb16c39-0c78-408f-985e-917f3a3d6972");
 
-            @Override
-            public void onActionOccurred(int code) { }
+            ((AdadBannerAd)findViewById(R.id.banner_ad_view)).setAdListener(new AdadAdListener()
+            {
+                @Override
+                public void onLoaded() { }
 
-            @Override
-            public void onError(int code, String message) { }
+                @Override
+                public void onShowed() { }
 
-            @Override
-            public void onClosed() { }
-        });
+                @Override
+                public void onActionOccurred(int code) { }
+
+                @Override
+                public void onError(int code, String message) { }
+
+                @Override
+                public void onClosed() { }
+            });
+        }
 
         // Create the client used to sign in to Google services.
         mGoogleSignInClient = GoogleSignIn.getClient(this,

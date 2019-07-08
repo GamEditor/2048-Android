@@ -1,8 +1,11 @@
 package com.gameditors.a2048;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -110,23 +113,33 @@ public class MainActivity extends AppCompatActivity
 
         frameLayout.addView(view);
 
-        ((AdadBannerAd)findViewById(R.id.banner_ad_view_game)).setAdListener(new AdadAdListener() {
-            @Override
-            public void onLoaded() { }
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
 
-            @Override
-            public void onShowed() { }
+        if(activeNetwork != null && activeNetwork.isConnectedOrConnecting())
+        {
+            ((AdadBannerAd) findViewById(R.id.banner_ad_view_game)).setAdListener(new AdadAdListener() {
+                @Override
+                public void onLoaded() {
+                }
 
-            @Override
-            public void onActionOccurred(int code) { }
+                @Override
+                public void onShowed() {
+                }
 
-            @Override
-            public void onError(int code, String message) { }
+                @Override
+                public void onActionOccurred(int code) {
+                }
 
-            @Override
-            public void onClosed() { }
-        });
+                @Override
+                public void onError(int code, String message) {
+                }
 
+                @Override
+                public void onClosed() {
+                }
+            });
+        }
         // Create the client used to sign in to Google services.
         mGoogleSignInClient = GoogleSignIn.getClient(this,
                 new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN).build());
