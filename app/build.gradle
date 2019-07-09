@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'mfathi'
-            keyPassword 'vb6cpp11unitycs'
-            storeFile file('G:/Projects/AndroidStudio/2048_Cafe_Bazaar/2048/keystore/keyStore.jks')
-            storePassword 'vb6cpp11unitycs'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.gameditors.a2048"
@@ -21,7 +13,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
         }
     }
     // This is important, it will run lint checks but won't abort build
