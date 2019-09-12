@@ -15,4 +15,4 @@ Also follow us on <a href="https://www.instagram.com/gameditors">instagram</a><b
 This is our <a href="https://www.youtube.com/channel/UCUlIc70CKA5OAJgWzjd7DyA?view_as=subscriber">YouTube channel</a>
 
 <b>Demo</b><br>
-![Demo gameplay](https://github.com/GamEditorsTechnolegies/2048-Android/blob/master/2048-Android.gif?raw=true)
+![Demo gameplay](https://github.com/GamEditor/2048-Android/blob/master/2048-Android.gif?raw=true)
