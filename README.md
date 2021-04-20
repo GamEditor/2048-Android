@@ -11,7 +11,7 @@ This project contains:
 Hints:
 - We keeped all tokens from Google Play Games Service and Adad because of test purposes, you must replace your own.
 
-Please follow me on <a href="https://www.instagram.com/gameditors/">instagram</a>
+you can find me on social media: <a href="https://www.instagram.com/sharepointer.ir/">instagram</a> or <a href="https://www.linkedin.com/in/mohammad-fathi/">LinkedIn</a>
 
 <b>Demo</b><br>
 ![Demo gameplay](https://github.com/GamEditor/2048-Android/blob/master/2048-Android.gif?raw=true)
